@@ -1,0 +1,48 @@
+.my-projects {
+  color: white; /* Text color for the entire component */
+  padding: 50px; /* Padding around the component */
+  min-height: 100vh; /* Minimum height to cover the viewport */
+  transition: background-color 0.3s ease-out; /* Transition effect for background color */
+}
+
+.my-projects h2 {
+  font-size: 10vw; /* This will make the font size responsive based on viewport width */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.project-item {
+  opacity: 0; /* Initial opacity for animation */
+  transform: translateY(50px); /* Initial translation for animation */
+  transition: all 0.5s ease-out; /* Transition effect for appearance */
+  margin-bottom: 40px; /* Space below each project item */
+}
+
+.project-item.visible {
+  opacity: 1; /* Full opacity when visible */
+  transform: translateY(0); /* Reset translation when visible */
+}
+
+.project-item h3 {
+  font-size: 3rem; /* Size of the project title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.project-item p {
+  font-size: 2rem; /* Size of the project description text */
+  color: #d3d3d3; /* Light gray color for better readability */
+  line-height: 1.5; /* Line height for paragraph text */
+}
+
+/* Styles for the image grid */
+.image-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create a grid with 2 columns */
+  gap: 20px; /* Space between the images */
+  margin-top: 20px; /* Space above the image grid */
+}
+
+.image-item img {
+  width: 100%; /* Ensure the image fills the container */
+  border-radius: 10px; /* Optional: Add rounded corners to images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
